@@ -1,0 +1,1 @@
+/// game_interact(obj1, obj2) - Nimmt zwei Objekte auf und entscheidet die Interaktion

@@ -1,0 +1,1 @@
+oGame__step_checkIntro();

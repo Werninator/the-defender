@@ -1,0 +1,1 @@
+_state = OGAME_STATE.INTRO;
