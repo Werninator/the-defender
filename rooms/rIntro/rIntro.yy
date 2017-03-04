@@ -9,7 +9,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "309ea31f-bfdd-4cfc-88b9-2260333147d0"
+        "309ea31f-bfdd-4cfc-88b9-2260333147d0",
+        "cd7fd21f-f8d6-47ba-9ffa-ce99280fcb56"
     ],
     "layers": [
         {
@@ -18,8 +19,8 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 16,
+            "grid_y": 16,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -44,8 +45,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_game",
-                    "x": -32,
-                    "y": -32,
+                    "x": 0,
+                    "y": -16,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -55,6 +56,30 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_game",
                     "objId": "449d8e79-918c-41ba-b5c8-f5a116d413cd",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "cd7fd21f-f8d6-47ba-9ffa-ce99280fcb56",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_grid",
+                    "x": 16,
+                    "y": -16,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_grid",
+                    "objId": "dd9f6de4-d61e-4626-927b-78b7d10e21ad",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
@@ -114,8 +139,8 @@
         "id": "f919ee5c-49c5-421a-902d-4d1c0fd16aa3",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 800,
-        "Width": 480,
+        "Height": 400,
+        "Width": 240,
         "inheritRoomSettings": false,
         "persistent": false
     },
@@ -125,7 +150,7 @@
         "mvc": "1.0",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false
     },
     "views": [
@@ -134,16 +159,16 @@
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
-            "hport": 768,
+            "hport": 800,
             "hspeed": -1,
-            "hview": 768,
+            "hview": 400,
             "inherit": false,
             "objId": "00000000-0000-0000-0000-000000000000",
             "vborder": 32,
-            "visible": false,
+            "visible": true,
             "vspeed": -1,
-            "wport": 1024,
-            "wview": 1024,
+            "wport": 480,
+            "wview": 240,
             "xport": 0,
             "xview": 0,
             "yport": 0,
