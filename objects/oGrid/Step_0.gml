@@ -28,16 +28,20 @@ if(room != rIntro)
 			var roomCellsY = room_height div 16;
 			
 	
-			/// @DnDAction : YoYo Games.Common.Execute_Code
+			/// @DnDAction : YoYo Games.Common.Function_Call
 			/// @DnDVersion : 1
-			/// @DnDHash : 38CC28D7
+			/// @DnDHash : 0FC6E07F
+			/// @DnDInput : 6
 			/// @DnDParent : 7EB11546
-			/// @DnDArgument : "code" "/// @desc Create player mp grid$(13_10)playerGrid = mp_grid_create(0, 0, roomCellsX, roomCellsY, 16, 16);"
-			
-			{
-				/// @desc Create player mp grid
+			/// @DnDArgument : "var" "playerGrid"
+			/// @DnDArgument : "function" "mp_grid_create"
+			/// @DnDArgument : "arg" "0"
+			/// @DnDArgument : "arg_1" "0"
+			/// @DnDArgument : "arg_2" "roomCellsX"
+			/// @DnDArgument : "arg_3" "roomCellsY"
+			/// @DnDArgument : "arg_4" "16"
+			/// @DnDArgument : "arg_5" "16"
 			playerGrid = mp_grid_create(0, 0, roomCellsX, roomCellsY, 16, 16);
-			}
 	
 			/// @DnDAction : YoYo Games.Common.Execute_Script
 			/// @DnDVersion : 1.1

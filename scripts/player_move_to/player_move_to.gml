@@ -50,15 +50,22 @@ if(!(posX == playerX && posY == playerY))
 	
 	}
 
-	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
-	/// @DnDHash : 00E60ED3
+	/// @DnDHash : 4F31E217
+	/// @DnDInput : 7
 	/// @DnDParent : 14AD7AA6
-	/// @DnDArgument : "code" "var mpPath = mp_grid_path(grid, path, playerX, playerY, posX, posY, false);"
-	
-	{
-		var mpPath = mp_grid_path(grid, path, playerX, playerY, posX, posY, false);
-	}
+	/// @DnDArgument : "var" "mpPath"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "function" "mp_grid_path"
+	/// @DnDArgument : "arg" "grid"
+	/// @DnDArgument : "arg_1" "path"
+	/// @DnDArgument : "arg_2" "playerX"
+	/// @DnDArgument : "arg_3" "playerY"
+	/// @DnDArgument : "arg_4" "posX"
+	/// @DnDArgument : "arg_5" "posY"
+	/// @DnDArgument : "arg_6" "false"
+	var mpPath = mp_grid_path(grid, path, playerX, playerY, posX, posY, false);
 
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
@@ -81,6 +88,13 @@ if(!(posX == playerX && posY == playerY))
 				path_start(path, movSpeed, 0, true);
 			}
 	
+			/// @DnDAction : YoYo Games.Common.Return
+			/// @DnDVersion : 1
+			/// @DnDHash : 19CCD3F7
+			/// @DnDParent : 2B26B43A
+			/// @DnDArgument : "value" "true"
+			return true;
+	
 	
 	}
 
@@ -92,14 +106,12 @@ if(!(posX == playerX && posY == playerY))
 	{
 		
 	
-			/// @DnDAction : YoYo Games.Common.Execute_Script
-			/// @DnDVersion : 1.1
-			/// @DnDHash : 588F3BAE
+			/// @DnDAction : YoYo Games.Common.Return
+			/// @DnDVersion : 1
+			/// @DnDHash : 7FEB4CD1
 			/// @DnDParent : 4CFA9727
-			/// @DnDArgument : "script" "log"
-			/// @DnDArgument : "arg" ""Kein Path konnte gefunden werden""
-			/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-			script_execute(log, "Kein Path konnte gefunden werden");
+			/// @DnDArgument : "value" "false"
+			return false;
 	
 	
 	}
