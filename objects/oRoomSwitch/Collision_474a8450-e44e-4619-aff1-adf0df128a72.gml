@@ -30,10 +30,12 @@ if(!(isMoving))
 	/// @DnDHash : 73B0DEA4
 	/// @DnDInput : 2
 	/// @DnDParent : 581F3CDB
+	/// @DnDArgument : "var" "ok"
+	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "function" "player_move_to"
 	/// @DnDArgument : "arg" "playerX + addX"
 	/// @DnDArgument : "arg_1" "playerY + addY"
-	player_move_to(playerX + addX, playerY + addY);
+	var ok = player_move_to(playerX + addX, playerY + addY);
 
 
 }

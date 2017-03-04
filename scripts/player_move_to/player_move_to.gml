@@ -100,7 +100,7 @@ if(!(posX == playerX && posY == playerY))
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
-	/// @DnDHash : 4CFA9727
+	/// @DnDHash : 541B1ECB
 	/// @DnDParent : 14AD7AA6
 	else
 	{
@@ -108,8 +108,8 @@ if(!(posX == playerX && posY == playerY))
 	
 			/// @DnDAction : YoYo Games.Common.Return
 			/// @DnDVersion : 1
-			/// @DnDHash : 7FEB4CD1
-			/// @DnDParent : 4CFA9727
+			/// @DnDHash : 34A8FBCB
+			/// @DnDParent : 541B1ECB
 			/// @DnDArgument : "value" "false"
 			return false;
 	
@@ -118,4 +118,10 @@ if(!(posX == playerX && posY == playerY))
 
 
 }
+
+/// @DnDAction : YoYo Games.Common.Return
+/// @DnDVersion : 1
+/// @DnDHash : 057DD930
+/// @DnDArgument : "value" "true"
+return true;
 
