@@ -1,11 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Execute_Script
-/// @DnDVersion : 1.1
-/// @DnDHash : 0BB1669E
-/// @DnDArgument : "script" "log"
-/// @DnDArgument : "arg" "direction"
-/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-script_execute(log, direction);
-
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 17B5ED70

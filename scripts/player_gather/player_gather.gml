@@ -58,14 +58,18 @@ if(tileIndex)
 				{
 					
 			
-						/// @DnDAction : YoYo Games.Common.Execute_Script
-						/// @DnDVersion : 1.1
-						/// @DnDHash : 5DF9D8FD
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 6B63E2F1
+						/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
 						/// @DnDParent : 47D88EB5
-						/// @DnDArgument : "script" "log"
-						/// @DnDArgument : "arg" ""stein""
-						/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-						script_execute(log, "stein");
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "expr_relative" "1"
+						/// @DnDArgument : "var" "stone"
+						with(oGame) {
+						stone += 1;
+						
+						}
 			
 			
 				}
@@ -80,14 +84,18 @@ if(tileIndex)
 				{
 					
 			
-						/// @DnDAction : YoYo Games.Common.Execute_Script
-						/// @DnDVersion : 1.1
-						/// @DnDHash : 4BD88384
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 65BF3CE3
+						/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
 						/// @DnDParent : 33650E65
-						/// @DnDArgument : "script" "log"
-						/// @DnDArgument : "arg" ""holz""
-						/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-						script_execute(log, "holz");
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "expr_relative" "1"
+						/// @DnDArgument : "var" "wood"
+						with(oGame) {
+						wood += 1;
+						
+						}
 			
 			
 				}
