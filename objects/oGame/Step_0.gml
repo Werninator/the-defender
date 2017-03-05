@@ -40,9 +40,9 @@ if(room != rIntro)
 			/// @DnDHash : 1BB34005
 			/// @DnDParent : 3CFF6CA6
 			/// @DnDArgument : "init_temp" "1"
-			/// @DnDArgument : "cond" "i < 5"
+			/// @DnDArgument : "cond" "i < array_length_1d(tryX)"
 			/// @DnDArgument : "expr" "i++"
-			for(var i = 0; i < 5; i++) {
+			for(var i = 0; i < array_length_1d(tryX); i++) {
 				
 			
 						/// @DnDAction : YoYo Games.Common.Execute_Script
@@ -98,6 +98,22 @@ if(room != rIntro)
 						/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
 						script_execute(log, "There's no way!");
 			
+			
+			}
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 7393CAB6
+			/// @DnDInput : 2
+			/// @DnDApplyTo : 0802be38-641c-431d-afca-2c25add97646
+			/// @DnDParent : 3CFF6CA6
+			/// @DnDArgument : "expr" "mouseCellX"
+			/// @DnDArgument : "expr_1" "mouseCellY"
+			/// @DnDArgument : "var" "gatherX"
+			/// @DnDArgument : "var_1" "gatherY"
+			with(oPlayer) {
+			gatherX = mouseCellX;
+			gatherY = mouseCellY;
 			
 			}
 	

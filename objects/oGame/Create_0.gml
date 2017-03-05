@@ -10,3 +10,15 @@
 	timeline_running = 1;
 }
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 72168D86
+/// @DnDInput : 3
+/// @DnDArgument : "var" "wood"
+/// @DnDArgument : "var_1" "stone"
+/// @DnDArgument : "var_2" "gold"
+wood = 0;
+stone = 0;
+gold = 0;
+
+
