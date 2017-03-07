@@ -13,12 +13,14 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 72168D86
-/// @DnDInput : 3
+/// @DnDInput : 4
 /// @DnDArgument : "var" "wood"
 /// @DnDArgument : "var_1" "stone"
 /// @DnDArgument : "var_2" "gold"
+/// @DnDArgument : "var_3" "nextWave"
 wood = 0;
 stone = 0;
 gold = 0;
+nextWave = 0;
 
 

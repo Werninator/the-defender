@@ -69,6 +69,17 @@ if(room != rIntro)
 			/// @DnDSaveInfo : "script" "5b3d4a92-09b5-418e-a4ae-9eb3d67850c5"
 			script_execute(mp_grid_add_layer, playerGrid, "Tiles_BG_Blocked", roomCellsX, roomCellsY);
 	
+			/// @DnDAction : YoYo Games.Common.Function_Call
+			/// @DnDVersion : 1
+			/// @DnDHash : 5BB7AA86
+			/// @DnDInput : 3
+			/// @DnDParent : 7EB11546
+			/// @DnDArgument : "function" "mp_grid_add_instances"
+			/// @DnDArgument : "arg" "playerGrid"
+			/// @DnDArgument : "arg_1" "oTower"
+			/// @DnDArgument : "arg_2" "false"
+			mp_grid_add_instances(playerGrid, oTower, false);
+	
 	
 	}
 
