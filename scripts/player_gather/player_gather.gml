@@ -30,6 +30,33 @@ var cellY = argument1;
 	}
 }
 
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 63E5BE7B
+/// @DnDArgument : "xpos" "cellX * 16"
+/// @DnDArgument : "ypos" "cellY * 16"
+/// @DnDArgument : "var" "const"
+/// @DnDArgument : "var_temp" "1"
+/// @DnDArgument : "objectid" "oConstruct"
+/// @DnDArgument : "layer" ""Instances_Construct""
+/// @DnDSaveInfo : "objectid" "a529de10-9fa0-498c-9e54-c2afa27a1065"
+var const = instance_create_layer(cellX * 16, cellY * 16, "Instances_Construct", oConstruct); 
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4332CA00
+/// @DnDInput : 2
+/// @DnDApplyTo : const
+/// @DnDArgument : "expr" "collect_material"
+/// @DnDArgument : "expr_1" "tileIndex"
+/// @DnDArgument : "var" "scriptToCall"
+/// @DnDArgument : "var_1" "arg"
+with(const) {
+scriptToCall = collect_material;
+arg = tileIndex;
+
+}
+
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 21D9A549
@@ -37,72 +64,6 @@ var cellY = argument1;
 if(tileIndex)
 {
 	
-
-	/// @DnDAction : YoYo Games.Switch.Switch
-	/// @DnDVersion : 1
-	/// @DnDHash : 45FB3C7D
-	/// @DnDParent : 21D9A549
-	/// @DnDArgument : "expr" "tileIndex"
-	var l45FB3C7D_0;
-	l45FB3C7D_0 = tileIndex;
-	switch(l45FB3C7D_0)
-	{
-		
-	
-			/// @DnDAction : YoYo Games.Switch.Case
-			/// @DnDVersion : 1
-			/// @DnDHash : 47D88EB5
-			/// @DnDParent : 45FB3C7D
-			/// @DnDArgument : "const" "6"
-			case 6:
-				{
-					
-			
-						/// @DnDAction : YoYo Games.Common.Variable
-						/// @DnDVersion : 1
-						/// @DnDHash : 6B63E2F1
-						/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
-						/// @DnDParent : 47D88EB5
-						/// @DnDArgument : "expr" "1"
-						/// @DnDArgument : "expr_relative" "1"
-						/// @DnDArgument : "var" "stone"
-						with(oGame) {
-						stone += 1;
-						
-						}
-			
-			
-				}
-				break;
-	
-			/// @DnDAction : YoYo Games.Switch.Case
-			/// @DnDVersion : 1
-			/// @DnDHash : 33650E65
-			/// @DnDParent : 45FB3C7D
-			/// @DnDArgument : "const" "7"
-			case 7:
-				{
-					
-			
-						/// @DnDAction : YoYo Games.Common.Variable
-						/// @DnDVersion : 1
-						/// @DnDHash : 65BF3CE3
-						/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
-						/// @DnDParent : 33650E65
-						/// @DnDArgument : "expr" "1"
-						/// @DnDArgument : "expr_relative" "1"
-						/// @DnDArgument : "var" "wood"
-						with(oGame) {
-						wood += 1;
-						
-						}
-			
-			
-				}
-				break;
-	
-	
-	}
 
 	/// @DnDAction : YoYo Games.Tiles.Tile_Set_In_Cell
 	/// @DnDVersion : 1
