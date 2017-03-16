@@ -2,7 +2,7 @@
     "id": "f46fe498-c7f1-485e-b918-55c05f462b55",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sInventoryBag",
+    "name": "sBag",
     "For3D": false,
     "HTile": false,
     "VTile": false,

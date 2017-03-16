@@ -234,15 +234,6 @@ if(room != rIntro)
 															/// @DnDParent : 590CD6AE
 															with(tower) instance_destroy();
 										
-															/// @DnDAction : YoYo Games.Common.Execute_Script
-															/// @DnDVersion : 1.1
-															/// @DnDHash : 1E2EC750
-															/// @DnDParent : 590CD6AE
-															/// @DnDArgument : "script" "log"
-															/// @DnDArgument : "arg" ""Es ist was im Weg!""
-															/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-															script_execute(log, "Es ist was im Weg!");
-										
 										
 										}
 						

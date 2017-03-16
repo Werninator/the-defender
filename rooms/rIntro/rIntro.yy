@@ -10,7 +10,8 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "309ea31f-bfdd-4cfc-88b9-2260333147d0",
-        "cd7fd21f-f8d6-47ba-9ffa-ce99280fcb56"
+        "cd7fd21f-f8d6-47ba-9ffa-ce99280fcb56",
+        "09926fc6-fe0d-4777-ac90-b18f020247ad"
     ],
     "layers": [
         {
@@ -80,6 +81,30 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_grid",
                     "objId": "dd9f6de4-d61e-4626-927b-78b7d10e21ad",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "09926fc6-fe0d-4777-ac90-b18f020247ad",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_bag",
+                    "x": 32,
+                    "y": -16,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_bag",
+                    "objId": "e17aa5e1-cd20-4160-a6af-1602a3988286",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1

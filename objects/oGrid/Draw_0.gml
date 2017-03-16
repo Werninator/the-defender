@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 4886D359
 /// @DnDArgument : "var" "debug"
-/// @DnDArgument : "value" "true"
-var debug = true;
+/// @DnDArgument : "value" "false"
+var debug = false;
 
 
 /// @DnDAction : YoYo Games.Common.If_Expression
