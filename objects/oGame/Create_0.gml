@@ -13,21 +13,24 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 72168D86
-/// @DnDInput : 6
+/// @DnDInput : 7
 /// @DnDArgument : "expr" "9"
 /// @DnDArgument : "expr_5" "30"
+/// @DnDArgument : "expr_6" ".5 * room_speed"
 /// @DnDArgument : "var" "wood"
 /// @DnDArgument : "var_1" "stone"
 /// @DnDArgument : "var_2" "gold"
 /// @DnDArgument : "var_3" "fabric"
 /// @DnDArgument : "var_4" "nextWave"
 /// @DnDArgument : "var_5" "waveInterval"
+/// @DnDArgument : "var_6" "global.constructionTime"
 wood = 9;
 stone = 0;
 gold = 0;
 fabric = 0;
 nextWave = 0;
 waveInterval = 30;
+global.constructionTime = .5 * room_speed;
 
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm

@@ -83,6 +83,15 @@ if(gatherX != -1 && gatherY != -1 && !isMoving)
 {
 	
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 44422B41
+	/// @DnDParent : 1D71943B
+	/// @DnDArgument : "expr" ".5 * room_speed"
+	/// @DnDArgument : "var" "global.constructionTime"
+	global.constructionTime = .5 * room_speed;
+	
+
 	/// @DnDAction : YoYo Games.Common.Execute_Script
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 36892D1A
@@ -116,6 +125,15 @@ if(gatherX != -1 && gatherY != -1 && !isMoving)
 /// @DnDArgument : "expr" "placeTowerX != -1 && placeTowerY != -1 && !isMoving"
 if(placeTowerX != -1 && placeTowerY != -1 && !isMoving)
 {
+	
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5741B16D
+	/// @DnDParent : 09C3CD43
+	/// @DnDArgument : "expr" "1 * room_speed"
+	/// @DnDArgument : "var" "global.constructionTime"
+	global.constructionTime = 1 * room_speed;
 	
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance

@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "120202ed-3e4b-4d28-b635-2993133edb7c",
+            "Value": {
+                "id": "8cb447e2-d2a2-445e-9fb6-f213a2b278fc",
+                "resourcePath": "objects\\oShopItem\\oShopItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "127411f6-d9b6-4bc9-8f2f-2fd4be899917",
             "Value": {
                 "id": "f8ffc6e8-d2f0-4d8b-9cb8-5e20e62e8837",

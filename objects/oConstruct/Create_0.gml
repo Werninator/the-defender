@@ -1,16 +1,13 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 27F295F9
-/// @DnDInput : 4
-/// @DnDArgument : "expr" ".5 * room_speed"
+/// @DnDInput : 3
+/// @DnDArgument : "expr" "undefined"
 /// @DnDArgument : "expr_1" "undefined"
-/// @DnDArgument : "expr_2" "undefined"
-/// @DnDArgument : "expr_3" "false"
-/// @DnDArgument : "var" "constructionTime"
-/// @DnDArgument : "var_1" "scriptToCall"
-/// @DnDArgument : "var_2" "arg"
-/// @DnDArgument : "var_3" "argPos"
-constructionTime = .5 * room_speed;
+/// @DnDArgument : "expr_2" "false"
+/// @DnDArgument : "var" "scriptToCall"
+/// @DnDArgument : "var_1" "arg"
+/// @DnDArgument : "var_2" "argPos"
 scriptToCall = undefined;
 arg = undefined;
 argPos = false;
@@ -30,7 +27,7 @@ moveEnabled = false;
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 54361829
-/// @DnDArgument : "steps" "constructionTime"
-alarm_set(0, constructionTime);
+/// @DnDArgument : "steps" "global.constructionTime"
+alarm_set(0, global.constructionTime);
 
 

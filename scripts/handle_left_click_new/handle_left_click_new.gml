@@ -78,10 +78,12 @@ var inReach = cellDistX <= 1 && cellDistY <= 1;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0F3D5890
-/// @DnDArgument : "code" "with oGrid {$(13_10)	var grid = playerGrid;$(13_10)	var path = playerPath;$(13_10)}$(13_10)$(13_10)var isBlocked = mp_grid_get_cell(grid, mouseCellX, mouseCellY) == -1;$(13_10)$(13_10)// Falls etwas im Weg ist, nehmen wir den blocked-cell vorerst raus$(13_10)if isBlocked$(13_10)	mp_grid_clear_cell(grid, mouseCellX, mouseCellY);$(13_10)$(13_10)// Einen neuen Path generieren lassen$(13_10)var pathResult =  mp_grid_path($(13_10)	grid,$(13_10)	path,$(13_10)	playerCellX * 16 + 8,$(13_10)	playerCellY * 16 + 8,$(13_10)	mouseCellX * 16 + 8,$(13_10)	mouseCellY * 16 + 8,$(13_10)	false$(13_10));$(13_10)$(13_10)// Wir adden den cell wieder$(13_10)if isBlocked$(13_10)	mp_grid_add_cell(grid, mouseCellX, mouseCellY);"
+/// @DnDArgument : "code" "/// @desc Generate Path$(13_10)$(13_10)with oGrid {$(13_10)	var grid = playerGrid;$(13_10)	var path = playerPath;$(13_10)}$(13_10)$(13_10)var isBlocked = mp_grid_get_cell(grid, mouseCellX, mouseCellY) == -1;$(13_10)$(13_10)// Falls etwas im Weg ist, nehmen wir den blocked-cell vorerst raus$(13_10)if isBlocked$(13_10)	mp_grid_clear_cell(grid, mouseCellX, mouseCellY);$(13_10)$(13_10)// Einen neuen Path generieren lassen$(13_10)var pathResult =  mp_grid_path($(13_10)	grid,$(13_10)	path,$(13_10)	playerCellX * 16 + 8,$(13_10)	playerCellY * 16 + 8,$(13_10)	mouseCellX * 16 + 8,$(13_10)	mouseCellY * 16 + 8,$(13_10)	false$(13_10));$(13_10)$(13_10)// Wir adden den cell wieder$(13_10)if isBlocked$(13_10)	mp_grid_add_cell(grid, mouseCellX, mouseCellY);"
 
 {
-	with oGrid {
+	/// @desc Generate Path
+
+with oGrid {
 	var grid = playerGrid;
 	var path = playerPath;
 }
