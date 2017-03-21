@@ -17,12 +17,15 @@ enum shopItemType {
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 34CD04DD
-/// @DnDInput : 2
+/// @DnDInput : 3
 /// @DnDArgument : "expr" "shopItemType.none"
 /// @DnDArgument : "expr_1" "-1"
+/// @DnDArgument : "expr_2" "69"
 /// @DnDArgument : "var" "currentType"
 /// @DnDArgument : "var_1" "quantity"
+/// @DnDArgument : "var_2" "cost"
 currentType = shopItemType.none;
 quantity = -1;
+cost = 69;
 
 

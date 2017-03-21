@@ -31,23 +31,43 @@ if(distance <= range && alarm[0] == -1)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4962FD05
 	/// @DnDParent : 396A9813
-	/// @DnDArgument : "xpos" "x"
-	/// @DnDArgument : "ypos" "y"
+	/// @DnDArgument : "xpos" "x div 16 * 16 - 6"
+	/// @DnDArgument : "ypos" "y div 16 * 16"
 	/// @DnDArgument : "var" "projectile"
 	/// @DnDArgument : "objectid" "oProjectile"
 	/// @DnDArgument : "layer" ""Instances_Projectiles""
 	/// @DnDSaveInfo : "objectid" "dca9b152-b060-4f3c-b0fb-16faae6da448"
-	projectile = instance_create_layer(x, y, "Instances_Projectiles", oProjectile); 
+	projectile = instance_create_layer(x div 16 * 16 - 6, y div 16 * 16, "Instances_Projectiles", oProjectile); 
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4C091D3D
+	/// @DnDInput : 2
+	/// @DnDParent : 396A9813
+	/// @DnDArgument : "var" "_dmg"
+	/// @DnDArgument : "value" "projectileDamage"
+	/// @DnDArgument : "var_1" "_spd"
+	/// @DnDArgument : "value_1" "projectileSpeed"
+	var _dmg = projectileDamage;
+	var _spd = projectileSpeed;
+	
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 70C6C3E3
+	/// @DnDInput : 3
 	/// @DnDApplyTo : projectile
 	/// @DnDParent : 396A9813
 	/// @DnDArgument : "expr" "nearestEnemy"
+	/// @DnDArgument : "expr_1" "_dmg"
+	/// @DnDArgument : "expr_2" "_spd"
 	/// @DnDArgument : "var" "enemy"
+	/// @DnDArgument : "var_1" "damage"
+	/// @DnDArgument : "var_2" "speed"
 	with(projectile) {
 	enemy = nearestEnemy;
+	damage = _dmg;
+	speed = _spd;
 	
 	}
 

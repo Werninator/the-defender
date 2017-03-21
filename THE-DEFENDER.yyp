@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "47df638e-484d-4703-9f72-5ba5ef65d4de",
+            "Value": {
+                "id": "d7ae46a0-1e0e-4607-907b-7377d9a0975d",
+                "resourcePath": "objects\\oTest\\oTest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48af8a04-48e2-4627-961f-ba07d848a825",
             "Value": {
                 "id": "65e8f236-3b53-47d7-b2f4-5f6d92782319",
@@ -319,6 +327,14 @@
             }
         },
         {
+            "Key": "7d185cf0-3039-474c-94f1-5dfc5075a059",
+            "Value": {
+                "id": "346252f9-0b79-4bfb-b0f6-71c3acf26bbf",
+                "resourcePath": "scripts\\draw_tower_gui\\draw_tower_gui.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "871ddcae-e957-49a5-b64f-421b0327122a",
             "Value": {
                 "id": "77839c2e-c9c1-45e7-a4ad-deb1af633aec",
@@ -351,6 +367,14 @@
             }
         },
         {
+            "Key": "99156c84-a5e5-45a3-b419-80cb94925ad3",
+            "Value": {
+                "id": "62d1e82a-9a36-4db2-a655-12e5bdaef367",
+                "resourcePath": "fonts\\font_mini\\font_mini.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "99602ee2-629c-47ec-b2f6-c015924762de",
             "Value": {
                 "id": "440725c8-b1ed-4895-854a-c0df2f126c0d",
@@ -363,6 +387,14 @@
             "Value": {
                 "id": "73558e9c-c795-4a72-bc85-e7226821fdd6",
                 "resourcePath": "scripts\\draw_text_with_shadow\\draw_text_with_shadow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a019dd8e-35a6-4657-92c3-e6b32c76f434",
+            "Value": {
+                "id": "4ba4c3c0-c68b-4f11-b60e-9322472a92da",
+                "resourcePath": "scripts\\check_resources\\check_resources.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -575,6 +607,22 @@
             }
         },
         {
+            "Key": "f555c591-d492-4776-80e8-1a7bb43a097c",
+            "Value": {
+                "id": "2818448f-e5bf-4487-a440-ef9dc5cfec4e",
+                "resourcePath": "scripts\\handle_right_click\\handle_right_click.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fe74fb6e-fbef-4c3b-a8d7-0983a33603d0",
+            "Value": {
+                "id": "8850eda0-fe71-4d6b-8d62-e823d2412eac",
+                "resourcePath": "objects\\oTowerCraft\\oTowerCraft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fe7f48e2-4297-4a25-9287-9acde4e5b7f3",
             "Value": {
                 "id": "ff85460b-c709-47c1-a675-6385339a6674",
@@ -590,6 +638,7 @@
         "d843ebf9-110d-45ec-b80e-e2cf0c462c34",
         "9d89daac-5b90-4e09-99e4-9c1d270ea433",
         "42234fd8-eaae-474a-a1b7-73945e37d5c8",
+        "7d185cf0-3039-474c-94f1-5dfc5075a059",
         "2d1d8f18-bc61-4d16-be3a-94f7cbb3d5d4",
         "0272f058-a1d2-4f3c-81c8-997c82a76abf",
         "27f5e7d7-e8c8-4da5-904e-c61cc83818da",
@@ -598,6 +647,8 @@
         "2a034edb-3581-4f0f-a9e6-f01329254d33",
         "d4d445f8-b784-4bd0-b989-9489b78688e6",
         "d75c2216-464f-4a09-85af-acb167cef932",
+        "f555c591-d492-4776-80e8-1a7bb43a097c",
+        "a019dd8e-35a6-4657-92c3-e6b32c76f434",
         "0452f429-db82-45a0-b0c5-255bdf846596"
     ],
     "tutorial": ""

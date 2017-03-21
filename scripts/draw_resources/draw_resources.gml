@@ -83,4 +83,4 @@ draw_text_with_shadow(
 	font_bigger
 );
 
-// _x += pad + string_width(string(f));
+// _x += pad + string_width(f);

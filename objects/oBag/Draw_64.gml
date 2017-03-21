@@ -75,6 +75,28 @@ if(room != rIntro)
 	
 	}
 
+	/// @DnDAction : YoYo Games.Common.If_Expression
+	/// @DnDVersion : 1
+	/// @DnDHash : 611BDF06
+	/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+	/// @DnDParent : 592585D6
+	/// @DnDArgument : "expr" "showGrid"
+	with(oGrid) var l611BDF06_0 = showGrid;
+	if(l611BDF06_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 2785F782
+			/// @DnDParent : 611BDF06
+			/// @DnDArgument : "script" "draw_tower_gui"
+			/// @DnDSaveInfo : "script" "7d185cf0-3039-474c-94f1-5dfc5075a059"
+			script_execute(draw_tower_gui);
+	
+	
+	}
+
 
 }
 
