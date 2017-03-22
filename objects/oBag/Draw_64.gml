@@ -52,12 +52,24 @@ if(room != rIntro)
 	draw_sprite_ext(sBag, 0, l1B900E46_0, l1B900E46_1, l1B900E46_2, l1B900E46_3, l1B900E46_4, l1B900E46_5, l1B900E46_6);
 	
 
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 713DE787
+	/// @DnDApplyTo : 0802be38-641c-431d-afca-2c25add97646
+	/// @DnDParent : 592585D6
+	/// @DnDArgument : "var" "inCastle"
+	/// @DnDArgument : "value" "place_meeting(x, y, oCastleArea)"
+	with(oPlayer) {
+	var inCastle = place_meeting(x, y, oCastleArea);
+	
+	}
+
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 1DD2CF7F
 	/// @DnDParent : 592585D6
-	/// @DnDArgument : "expr" "isHovering"
-	if(isHovering)
+	/// @DnDArgument : "expr" "isHovering || inCastle"
+	if(isHovering || inCastle)
 	{
 		
 	
@@ -80,8 +92,8 @@ if(room != rIntro)
 	/// @DnDHash : 611BDF06
 	/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
 	/// @DnDParent : 592585D6
-	/// @DnDArgument : "expr" "showGrid"
-	with(oGrid) var l611BDF06_0 = showGrid;
+	/// @DnDArgument : "expr" "showGrid || inCastle"
+	with(oGrid) var l611BDF06_0 = showGrid || inCastle;
 	if(l611BDF06_0)
 	{
 		

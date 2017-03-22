@@ -1,8 +1,8 @@
 {
-    "id": "8767de29-8722-478a-82d7-045bb4a1344b",
+    "id": "d17ad32f-4793-4e69-9471-456cec39d07d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oEnemyGoal",
+    "name": "oCastleArea",
     "eventList": [
         
     ],
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "44a046b3-e5a4-4dde-9455-b8dbf9910490",
+    "spriteId": "73af3c52-bb22-4cc1-8e20-66d3ded60061",
     "visible": false
 }

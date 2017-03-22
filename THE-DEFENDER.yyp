@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "44a046b3-e5a4-4dde-9455-b8dbf9910490",
+            "Value": {
+                "id": "e5bd4ed0-7297-4739-a161-afbc1abacbd8",
+                "resourcePath": "sprites\\sGoal\\sGoal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "479a6563-bca0-46d7-82bd-1f265738e6c3",
             "Value": {
                 "id": "3de47b54-2e3a-4b11-911b-91f2f1d4e5d7",
@@ -308,6 +316,14 @@
                 "id": "ce6912da-0542-4969-941d-dd14a200a4ec",
                 "resourcePath": "scripts\\handle_left_click\\handle_left_click.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "73af3c52-bb22-4cc1-8e20-66d3ded60061",
+            "Value": {
+                "id": "e79c228e-01e1-45ec-a62b-01f2ff248b2b",
+                "resourcePath": "sprites\\sArea\\sArea.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -508,6 +524,14 @@
                 "id": "52959116-dea6-43ec-8cda-0afb6dc8dc18",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d17ad32f-4793-4e69-9471-456cec39d07d",
+            "Value": {
+                "id": "4e7a525e-bd23-49c0-84a5-166c5bcee682",
+                "resourcePath": "objects\\oCastleArea\\oCastleArea.yy",
+                "resourceType": "GMObject"
             }
         },
         {

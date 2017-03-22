@@ -176,6 +176,18 @@ if(room != rIntro)
 										/// @DnDSaveInfo : "script" "f287a56d-c28f-4b96-ae6f-e6aecb8cf953"
 										script_execute(handle_left_click_new);
 						
+										/// @DnDAction : YoYo Games.Common.Variable
+										/// @DnDVersion : 1
+										/// @DnDHash : 2094C8C3
+										/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+										/// @DnDParent : 06A629BC
+										/// @DnDArgument : "expr" "false"
+										/// @DnDArgument : "var" "showGrid"
+										with(oGrid) {
+										showGrid = false;
+										
+										}
+						
 						
 						}
 			
@@ -245,6 +257,26 @@ if(room != rIntro)
 			
 			
 			}
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 0CEBFE9A
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "ord("R")"
+	var l0CEBFE9A_0;
+	l0CEBFE9A_0 = keyboard_check_pressed(ord("R"));
+	if (l0CEBFE9A_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Game.Restart_Game
+			/// @DnDVersion : 1
+			/// @DnDHash : 53F1B5B2
+			/// @DnDParent : 0CEBFE9A
+			game_restart();
 	
 	
 	}
