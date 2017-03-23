@@ -1,2 +1,2 @@
 currentType = towerCraftType.wood;
-cost = 1;
+cost = 2;

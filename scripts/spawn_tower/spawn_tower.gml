@@ -32,3 +32,10 @@ with(oGrid) {
 	mp_grid_add_instances(playerGrid, oTower, false);
 }
 
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 02F4E07B
+/// @DnDArgument : "script" "generate_new_enemy_paths"
+/// @DnDSaveInfo : "script" "29caa0b4-37ad-4ff1-9fb2-6042f78a0671"
+script_execute(generate_new_enemy_paths);
+

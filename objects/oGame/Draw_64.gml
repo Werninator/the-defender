@@ -40,6 +40,31 @@ if(room != rIntro)
 	/// @DnDArgument : "arg_4" "5"
 	draw_line_width(0, 0, global.camW * 2 * progress, 0, 5);
 
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 17A6A41D
+	/// @DnDParent : 4CC2F570
+	/// @DnDArgument : "font" "font_regular"
+	/// @DnDSaveInfo : "font" "f135c10c-7094-4e16-b501-0b7a73bc25ba"
+	
+	{
+		draw_set_font(font_regular);
+	}
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 0926A7B4
+	/// @DnDParent : 4CC2F570
+	/// @DnDArgument : "y" "5"
+	/// @DnDArgument : "caption" ""LEBEN: ""
+	/// @DnDArgument : "var" "hp"
+	
+	{
+		var l0926A7B4_0 = 0;
+		var l0926A7B4_1 = 5;
+		draw_text(l0926A7B4_0, l0926A7B4_1, string("LEBEN: ") + string(hp));
+	}
+
 
 }
 

@@ -1,0 +1,1 @@
+amountWaves = -1;

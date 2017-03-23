@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0a6ad30f-a6b9-4af9-891a-4dabfefee799",
+            "Value": {
+                "id": "ac1ce132-2cd6-4b55-b1ab-d3e0aa3132cd",
+                "resourcePath": "objects\\oLevelSettings\\oLevelSettings.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ef0046d-427a-4ff2-9597-e7965d9fd15d",
             "Value": {
                 "id": "d11f03a0-41d9-4591-a73a-799cf9d9fb69",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "29caa0b4-37ad-4ff1-9fb2-6042f78a0671",
+            "Value": {
+                "id": "acd0eadb-9f5b-4c94-8645-3415d2531ecc",
+                "resourcePath": "scripts\\generate_new_enemy_paths\\generate_new_enemy_paths.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2a034edb-3581-4f0f-a9e6-f01329254d33",
             "Value": {
                 "id": "c5224999-db8e-4d2f-802c-f09cce49fa57",
@@ -172,6 +188,14 @@
                 "id": "3d61e8e7-7226-4e80-af57-df57bc581e4b",
                 "resourcePath": "views\\2eada855-b4f6-4078-a1c4-e77d7a93f23e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2f1a9373-ce8d-4e90-975e-bd215c4ef7e1",
+            "Value": {
+                "id": "ca450193-51cc-4989-b616-435469c22aeb",
+                "resourcePath": "sprites\\sLevelSettings\\sLevelSettings.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -673,7 +697,8 @@
         "d75c2216-464f-4a09-85af-acb167cef932",
         "f555c591-d492-4776-80e8-1a7bb43a097c",
         "a019dd8e-35a6-4657-92c3-e6b32c76f434",
-        "0452f429-db82-45a0-b0c5-255bdf846596"
+        "0452f429-db82-45a0-b0c5-255bdf846596",
+        "29caa0b4-37ad-4ff1-9fb2-6042f78a0671"
     ],
     "tutorial": ""
 }

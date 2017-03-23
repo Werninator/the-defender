@@ -14,9 +14,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 72168D86
 /// @DnDInput : 12
-/// @DnDArgument : "expr" "9"
-/// @DnDArgument : "expr_5" "10"
+/// @DnDArgument : "expr_5" "30"
 /// @DnDArgument : "expr_6" ".5 * room_speed"
+/// @DnDArgument : "expr_11" "20"
 /// @DnDArgument : "var" "wood"
 /// @DnDArgument : "var_1" "stone"
 /// @DnDArgument : "var_2" "gold"
@@ -29,18 +29,18 @@
 /// @DnDArgument : "var_9" "towerFabric"
 /// @DnDArgument : "var_10" "selectedTowerType"
 /// @DnDArgument : "var_11" "hp"
-wood = 9;
+wood = 0;
 stone = 0;
 gold = 0;
 fabric = 0;
 nextWave = 0;
-waveInterval = 10;
+waveInterval = 30;
 global.constructionTime = .5 * room_speed;
 towerWood = 0;
 towerStone = 0;
 towerFabric = 0;
 selectedTowerType = 0;
-hp = 0;
+hp = 20;
 
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
