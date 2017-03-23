@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oEnemyGoal",
     "eventList": [
-        
+        {
+            "id": "ee9619da-5128-4bde-bdc6-f32119a20da2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "b8ee3d15-3e7f-46a0-8129-ed7d0824b7f8",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "8767de29-8722-478a-82d7-045bb4a1344b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",

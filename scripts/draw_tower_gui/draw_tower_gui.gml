@@ -5,11 +5,15 @@ with oGame {
 	var selected = selectedTowerType;
 }
 
+var cam = view_get_camera(0);
+var camW = camera_get_view_width(cam);
+var camH = camera_get_view_height(cam);
+
 var padding = 10;
 var scaleX = 2;
 var scaleY = 2;
-var drawX = global.camW * 2 - padding - 32;
-var drawY = global.camH * 2 - padding - 32;
+var drawX = camW * 2 - padding - 32;
+var drawY = camH * 2 - padding - 32;
 var drawColor = c_white;
 
 // Draw selected Tower indicator

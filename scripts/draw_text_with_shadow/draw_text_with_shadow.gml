@@ -11,7 +11,7 @@ draw_set_font(_font);
 draw_set_color(c_black);
 draw_text(_x + 1, _y + 1, _text);
 
-// shadow
+// text
 draw_set_color(c_white);
 draw_text(_x, _y, _text);
 
