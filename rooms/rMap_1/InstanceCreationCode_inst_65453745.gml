@@ -1,4 +1,4 @@
-amountWaves = 5;
+amountWaves = 1;
 
 with oGame {
 

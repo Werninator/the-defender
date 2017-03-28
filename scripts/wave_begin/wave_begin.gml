@@ -71,17 +71,6 @@ if(l6F4B88FB_0)
 	
 	}
 
-	/// @DnDAction : YoYo Games.Instances.Set_Alarm
-	/// @DnDVersion : 1
-	/// @DnDHash : 40B5539B
-	/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
-	/// @DnDParent : 6F4B88FB
-	/// @DnDArgument : "steps" "waveInterval * room_speed"
-	with(oGame) {
-	alarm_set(0, waveInterval * room_speed);
-	
-	}
-
 
 }
 
