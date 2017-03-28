@@ -281,6 +281,136 @@ if(room != rIntro)
 	
 	}
 
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 797FE183
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "ord("1")"
+	var l797FE183_0;
+	l797FE183_0 = keyboard_check_pressed(ord("1"));
+	if (l797FE183_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 39EB798F
+			/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+			/// @DnDParent : 797FE183
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "showGrid"
+			with(oGrid) {
+			showGrid = true;
+			
+			}
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 376FF631
+			/// @DnDParent : 797FE183
+			/// @DnDArgument : "var" "selectedTowerType"
+			selectedTowerType = 0;
+			
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 61837879
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "ord("2")"
+	var l61837879_0;
+	l61837879_0 = keyboard_check_pressed(ord("2"));
+	if (l61837879_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 5613C98E
+			/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+			/// @DnDParent : 61837879
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "showGrid"
+			with(oGrid) {
+			showGrid = true;
+			
+			}
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 3BE122EA
+			/// @DnDParent : 61837879
+			/// @DnDArgument : "expr" "1"
+			/// @DnDArgument : "var" "selectedTowerType"
+			selectedTowerType = 1;
+			
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 0A933357
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "ord("3")"
+	var l0A933357_0;
+	l0A933357_0 = keyboard_check_pressed(ord("3"));
+	if (l0A933357_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 3219C64A
+			/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+			/// @DnDParent : 0A933357
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "showGrid"
+			with(oGrid) {
+			showGrid = true;
+			
+			}
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 7FA43C7A
+			/// @DnDParent : 0A933357
+			/// @DnDArgument : "expr" "2"
+			/// @DnDArgument : "var" "selectedTowerType"
+			selectedTowerType = 2;
+			
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 7350B549
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "vk_escape"
+	var l7350B549_0;
+	l7350B549_0 = keyboard_check_pressed(vk_escape);
+	if (l7350B549_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 0BA9D8EF
+			/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+			/// @DnDParent : 7350B549
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "showGrid"
+			with(oGrid) {
+			showGrid = false;
+			
+			}
+	
+	
+	}
+
 
 }
 

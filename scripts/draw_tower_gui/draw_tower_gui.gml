@@ -1,3 +1,5 @@
+var _y = argument0;
+
 with oGame {
 	var w = string(towerWood);
 	var s = string(towerStone);
@@ -13,7 +15,7 @@ var padding = 10;
 var scaleX = 2;
 var scaleY = 2;
 var drawX = camW * 2 - padding - 32;
-var drawY = camH * 2 - padding - 32;
+var drawY = _y;
 var drawColor = c_white;
 
 // Draw selected Tower indicator

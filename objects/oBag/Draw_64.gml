@@ -12,12 +12,12 @@ if(room != rIntro)
 	/// @DnDInput : 3
 	/// @DnDParent : 592585D6
 	/// @DnDArgument : "var" "_y"
-	/// @DnDArgument : "value" "global.camH * 2"
+	/// @DnDArgument : "value" "y * 2 - 10"
 	/// @DnDArgument : "var_1" "mX"
 	/// @DnDArgument : "value_1" "mouse_x % global.camW"
 	/// @DnDArgument : "var_2" "mY"
 	/// @DnDArgument : "value_2" "mouse_y % global.camH"
-	var _y = global.camH * 2;
+	var _y = y * 2 - 10;
 	var mX = mouse_x % global.camW;
 	var mY = mouse_y % global.camH;
 	
@@ -36,14 +36,14 @@ if(room != rIntro)
 	/// @DnDHash : 1B900E46
 	/// @DnDParent : 592585D6
 	/// @DnDArgument : "x" "10 - (isHovering ? 1 : 0)"
-	/// @DnDArgument : "y" "_y - 42 + (isHovering ? 1 : 0)"
+	/// @DnDArgument : "y" "_y + (isHovering ? 1 : 0)"
 	/// @DnDArgument : "xscale" "2"
 	/// @DnDArgument : "yscale" "2"
 	/// @DnDArgument : "sprite" "sBag"
 	/// @DnDSaveInfo : "sprite" "f46fe498-c7f1-485e-b918-55c05f462b55"
 	
 	var l1B900E46_0 = 10 - (isHovering ? 1 : 0);
-	var l1B900E46_1 = _y - 42 + (isHovering ? 1 : 0);
+	var l1B900E46_1 = _y + (isHovering ? 1 : 0);
 	var l1B900E46_2 = 2;
 	var l1B900E46_3 = 2;
 	var l1B900E46_4 = 0;
@@ -80,9 +80,9 @@ if(room != rIntro)
 			/// @DnDParent : 1DD2CF7F
 			/// @DnDArgument : "script" "draw_resources"
 			/// @DnDArgument : "arg" "42"
-			/// @DnDArgument : "arg_1" "_y - 42"
+			/// @DnDArgument : "arg_1" "_y"
 			/// @DnDSaveInfo : "script" "42234fd8-eaae-474a-a1b7-73945e37d5c8"
-			script_execute(draw_resources, 42, _y - 42);
+			script_execute(draw_resources, 42, _y);
 	
 	
 	}
@@ -103,8 +103,9 @@ if(room != rIntro)
 			/// @DnDHash : 2785F782
 			/// @DnDParent : 611BDF06
 			/// @DnDArgument : "script" "draw_tower_gui"
+			/// @DnDArgument : "arg" "_y"
 			/// @DnDSaveInfo : "script" "7d185cf0-3039-474c-94f1-5dfc5075a059"
-			script_execute(draw_tower_gui);
+			script_execute(draw_tower_gui, _y);
 	
 	
 	}
