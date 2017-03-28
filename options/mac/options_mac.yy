@@ -10,7 +10,7 @@
     "option_mac_app_id": "com.company.game",
     "option_mac_build_app_store": false,
     "option_mac_copyright": "(c) 2017 SPOOKY FIST PUMP",
-    "option_mac_display_cursor": false,
+    "option_mac_display_cursor": true,
     "option_mac_display_name": "THE DEFENDER",
     "option_mac_enable_steam": false,
     "option_mac_icon_png": "${base_options_dir}\\mac\\icons\\1024.png",

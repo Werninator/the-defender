@@ -15,9 +15,11 @@ var placementY = argument1;
 /// @DnDHash : 0D2760C6
 /// @DnDArgument : "xpos" "placementX"
 /// @DnDArgument : "ypos" "placementY"
+/// @DnDArgument : "var" "tower"
+/// @DnDArgument : "var_temp" "1"
 /// @DnDArgument : "objectid" "oTower"
 /// @DnDSaveInfo : "objectid" "a6a4ff80-c096-4ee4-a4f9-b0447646c467"
-instance_create_layer(placementX, placementY, "Instances", oTower); 
+var tower = instance_create_layer(placementX, placementY, "Instances", oTower); 
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1

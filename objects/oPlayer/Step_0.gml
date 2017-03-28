@@ -127,43 +127,104 @@ if(placeTowerX != -1 && placeTowerY != -1 && !isMoving)
 {
 	
 
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 5741B16D
-	/// @DnDParent : 09C3CD43
-	/// @DnDArgument : "expr" ".5 * room_speed"
-	/// @DnDArgument : "var" "global.constructionTime"
-	global.constructionTime = .5 * room_speed;
-	
-
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
-	/// @DnDHash : 7C5168BD
+	/// @DnDHash : 36A13123
 	/// @DnDParent : 09C3CD43
 	/// @DnDArgument : "xpos" "placeTowerX"
 	/// @DnDArgument : "ypos" "placeTowerY"
-	/// @DnDArgument : "var" "const"
+	/// @DnDArgument : "var" "test"
 	/// @DnDArgument : "var_temp" "1"
-	/// @DnDArgument : "objectid" "oConstruct"
+	/// @DnDArgument : "objectid" "oTest"
 	/// @DnDArgument : "layer" ""Instances_Construct""
-	/// @DnDSaveInfo : "objectid" "a529de10-9fa0-498c-9e54-c2afa27a1065"
-	var const = instance_create_layer(placeTowerX, placeTowerY, "Instances_Construct", oConstruct); 
+	/// @DnDSaveInfo : "objectid" "47df638e-484d-4703-9f72-5ba5ef65d4de"
+	var test = instance_create_layer(placeTowerX, placeTowerY, "Instances_Construct", oTest); 
 
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 1E87810F
-	/// @DnDInput : 2
-	/// @DnDApplyTo : const
+	/// @DnDAction : YoYo Games.Common.Execute_Script
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 2F10ECFD
 	/// @DnDParent : 09C3CD43
-	/// @DnDArgument : "expr" "spawn_tower"
-	/// @DnDArgument : "expr_1" "true"
-	/// @DnDArgument : "var" "scriptToCall"
-	/// @DnDArgument : "var_1" "argPos"
-	with(const) {
-	scriptToCall = spawn_tower;
-	argPos = true;
+	/// @DnDArgument : "var" "hasPath"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "script" "check_path"
+	/// @DnDSaveInfo : "script" "106b2a52-39d3-4e56-a46e-c19e7eff9f0d"
+	var hasPath = script_execute(check_path);
+
+	/// @DnDAction : YoYo Games.Common.If_Expression
+	/// @DnDVersion : 1
+	/// @DnDHash : 3C9070B2
+	/// @DnDParent : 09C3CD43
+	/// @DnDArgument : "expr" "hasPath"
+	if(hasPath)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 5741B16D
+			/// @DnDParent : 3C9070B2
+			/// @DnDArgument : "expr" ".5 * room_speed"
+			/// @DnDArgument : "var" "global.constructionTime"
+			global.constructionTime = .5 * room_speed;
+			
+	
+			/// @DnDAction : YoYo Games.Instances.Create_Instance
+			/// @DnDVersion : 1
+			/// @DnDHash : 7C5168BD
+			/// @DnDParent : 3C9070B2
+			/// @DnDArgument : "xpos" "placeTowerX"
+			/// @DnDArgument : "ypos" "placeTowerY"
+			/// @DnDArgument : "var" "const"
+			/// @DnDArgument : "var_temp" "1"
+			/// @DnDArgument : "objectid" "oConstruct"
+			/// @DnDArgument : "layer" ""Instances_Construct""
+			/// @DnDSaveInfo : "objectid" "a529de10-9fa0-498c-9e54-c2afa27a1065"
+			var const = instance_create_layer(placeTowerX, placeTowerY, "Instances_Construct", oConstruct); 
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 1E87810F
+			/// @DnDInput : 2
+			/// @DnDApplyTo : const
+			/// @DnDParent : 3C9070B2
+			/// @DnDArgument : "expr" "spawn_tower"
+			/// @DnDArgument : "expr_1" "true"
+			/// @DnDArgument : "var" "scriptToCall"
+			/// @DnDArgument : "var_1" "argPos"
+			with(const) {
+			scriptToCall = spawn_tower;
+			argPos = true;
+			
+			}
+	
 	
 	}
+
+	/// @DnDAction : YoYo Games.Common.Else
+	/// @DnDVersion : 1
+	/// @DnDHash : 072DFF01
+	/// @DnDParent : 09C3CD43
+	else
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 2C227BB7
+			/// @DnDParent : 072DFF01
+			/// @DnDArgument : "script" "handle_placement_cancel"
+			/// @DnDSaveInfo : "script" "2a034edb-3581-4f0f-a9e6-f01329254d33"
+			script_execute(handle_placement_cancel);
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 6141F855
+	/// @DnDApplyTo : test
+	/// @DnDParent : 09C3CD43
+	with(test) instance_destroy();
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
