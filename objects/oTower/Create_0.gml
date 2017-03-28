@@ -40,18 +40,18 @@ switch(l53ECC719_0)
 			/// @DnDHash : 0D2C341E
 			/// @DnDInput : 4
 			/// @DnDParent : 3FCC3456
-			/// @DnDArgument : "expr" "50"
+			/// @DnDArgument : "expr" "80"
 			/// @DnDArgument : "expr_1" ".5 * room_speed"
 			/// @DnDArgument : "expr_2" "3"
-			/// @DnDArgument : "expr_3" "1"
+			/// @DnDArgument : "expr_3" ".5"
 			/// @DnDArgument : "var" "range"
 			/// @DnDArgument : "var_1" "cooldown"
 			/// @DnDArgument : "var_2" "projectileSpeed"
 			/// @DnDArgument : "var_3" "projectileDamage"
-			range = 50;
+			range = 80;
 			cooldown = .5 * room_speed;
 			projectileSpeed = 3;
-			projectileDamage = 1;
+			projectileDamage = .5;
 			
 	
 			/// @DnDAction : YoYo Games.Common.Variable
@@ -85,17 +85,17 @@ switch(l53ECC719_0)
 			/// @DnDHash : 6117AC1B
 			/// @DnDInput : 4
 			/// @DnDParent : 41710641
-			/// @DnDArgument : "expr" "50"
+			/// @DnDArgument : "expr" "30"
 			/// @DnDArgument : "expr_1" "1 * room_speed"
-			/// @DnDArgument : "expr_2" "3"
+			/// @DnDArgument : "expr_2" "5"
 			/// @DnDArgument : "expr_3" "5"
 			/// @DnDArgument : "var" "range"
 			/// @DnDArgument : "var_1" "cooldown"
 			/// @DnDArgument : "var_2" "projectileSpeed"
 			/// @DnDArgument : "var_3" "projectileDamage"
-			range = 50;
+			range = 30;
 			cooldown = 1 * room_speed;
-			projectileSpeed = 3;
+			projectileSpeed = 5;
 			projectileDamage = 5;
 			
 	
@@ -133,7 +133,7 @@ switch(l53ECC719_0)
 			/// @DnDArgument : "expr" "20"
 			/// @DnDArgument : "expr_1" ".1 * room_speed"
 			/// @DnDArgument : "expr_2" "5"
-			/// @DnDArgument : "expr_3" "2"
+			/// @DnDArgument : "expr_3" "1"
 			/// @DnDArgument : "var" "range"
 			/// @DnDArgument : "var_1" "cooldown"
 			/// @DnDArgument : "var_2" "projectileSpeed"
@@ -141,7 +141,7 @@ switch(l53ECC719_0)
 			range = 20;
 			cooldown = .1 * room_speed;
 			projectileSpeed = 5;
-			projectileDamage = 2;
+			projectileDamage = 1;
 			
 	
 			/// @DnDAction : YoYo Games.Common.Variable

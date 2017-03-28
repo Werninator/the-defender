@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "58f05b9e-da5c-48c7-89e7-6cfe045fd851",
+            "Value": {
+                "id": "015d6441-7c7c-402e-b491-4799fdeb58d9",
+                "resourcePath": "objects\\oFloatBox\\oFloatBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b3d4a92-09b5-418e-a4ae-9eb3d67850c5",
             "Value": {
                 "id": "83067479-32b0-4971-9133-23f9c0ac5b6c",

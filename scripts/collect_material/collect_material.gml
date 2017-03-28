@@ -6,6 +6,17 @@
 var tileIndex = argument0;
 
 
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 3399230B
+/// @DnDArgument : "xpos" "oPlayer.x div 16 * 16 + 8"
+/// @DnDArgument : "ypos" "oPlayer.y div 16 * 16 + 8"
+/// @DnDArgument : "var" "box"
+/// @DnDArgument : "var_temp" "1"
+/// @DnDArgument : "objectid" "oFloatBox"
+/// @DnDSaveInfo : "objectid" "58f05b9e-da5c-48c7-89e7-6cfe045fd851"
+var box = instance_create_layer(oPlayer.x div 16 * 16 + 8, oPlayer.y div 16 * 16 + 8, "Instances", oFloatBox); 
+
 /// @DnDAction : YoYo Games.Switch.Switch
 /// @DnDVersion : 1
 /// @DnDHash : 7B5C6784
@@ -38,6 +49,18 @@ switch(l7B5C6784_0)
 			
 			}
 	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 566E211A
+			/// @DnDApplyTo : box
+			/// @DnDParent : 442F1426
+			/// @DnDArgument : "expr" ""+1 STONE (" + string(oGame.stone) + ")""
+			/// @DnDArgument : "var" "text"
+			with(box) {
+			text = "+1 STONE (" + string(oGame.stone) + ")";
+			
+			}
+	
 	
 		}
 		break;
@@ -61,6 +84,18 @@ switch(l7B5C6784_0)
 			/// @DnDArgument : "var" "wood"
 			with(oGame) {
 			wood += 1;
+			
+			}
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 4476E9AC
+			/// @DnDApplyTo : box
+			/// @DnDParent : 2E550748
+			/// @DnDArgument : "expr" ""+1 WOOD (" + string(oGame.wood) + ")""
+			/// @DnDArgument : "var" "text"
+			with(box) {
+			text = "+1 WOOD (" + string(oGame.wood) + ")";
 			
 			}
 	

@@ -1,2 +1,2 @@
 currentType = towerCraftType.stone;
-cost = 5;
+cost = 3;

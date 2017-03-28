@@ -1,2 +1,2 @@
 currentType = towerCraftType.fabric;
-cost = 10;
+cost = 20;

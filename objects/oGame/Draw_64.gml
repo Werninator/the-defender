@@ -51,18 +51,54 @@ if(room != rIntro)
 		draw_set_font(font_regular);
 	}
 
-	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
-	/// @DnDHash : 0926A7B4
+	/// @DnDHash : 54BD906C
 	/// @DnDParent : 4CC2F570
-	/// @DnDArgument : "y" "5"
-	/// @DnDArgument : "caption" ""LEBEN: ""
-	/// @DnDArgument : "var" "hp"
-	
+	/// @DnDArgument : "expr" "hp <= 0"
+	if(hp <= 0)
 	{
-		var l0926A7B4_0 = 0;
-		var l0926A7B4_1 = 5;
-		draw_text(l0926A7B4_0, l0926A7B4_1, string("LEBEN: ") + string(hp));
+		
+	
+			/// @DnDAction : YoYo Games.Drawing.Draw_Value
+			/// @DnDVersion : 1
+			/// @DnDHash : 122F82E0
+			/// @DnDParent : 54BD906C
+			/// @DnDArgument : "y" "5"
+			/// @DnDArgument : "caption" ""YOU LOST. PRESS R TO RESTART""
+			
+			{
+				var l122F82E0_0 = 0;
+				var l122F82E0_1 = 5;
+				draw_text(l122F82E0_0, l122F82E0_1, string("YOU LOST. PRESS R TO RESTART") + "");
+			}
+	
+	
+	}
+
+	/// @DnDAction : YoYo Games.Common.Else
+	/// @DnDVersion : 1
+	/// @DnDHash : 0220611C
+	/// @DnDParent : 4CC2F570
+	else
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Drawing.Draw_Value
+			/// @DnDVersion : 1
+			/// @DnDHash : 0926A7B4
+			/// @DnDParent : 0220611C
+			/// @DnDArgument : "y" "5"
+			/// @DnDArgument : "caption" ""HEALTH: ""
+			/// @DnDArgument : "var" "hp"
+			
+			{
+				var l0926A7B4_0 = 0;
+				var l0926A7B4_1 = 5;
+				draw_text(l0926A7B4_0, l0926A7B4_1, string("HEALTH: ") + string(hp));
+			}
+	
+	
 	}
 
 

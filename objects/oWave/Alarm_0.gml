@@ -143,22 +143,31 @@ if(enemyCount[1] <= 0)
 	{
 		
 	
-			/// @DnDAction : YoYo Games.Instances.Set_Alarm
+			/// @DnDAction : YoYo Games.Common.Execute_Code
 			/// @DnDVersion : 1
-			/// @DnDHash : 677AAB3A
+			/// @DnDHash : 6A245140
 			/// @DnDParent : 2344C262
-			/// @DnDArgument : "steps" "-1"
-			/// @DnDArgument : "steps_relative" "1"
-			alarm_set(0, -1 + alarm_get(0));
+			/// @DnDArgument : "code" "ready = true;$(13_10)$(13_10)var everyWaveReady = true;$(13_10)$(13_10)var _number = number;$(13_10)$(13_10)with oWave$(13_10)	if number == _number && !ready$(13_10)		everyWaveReady = false;"
 			
+			{
+				ready = true;
+			
+			var everyWaveReady = true;
+			
+			var _number = number;
+			
+			with oWave
+				if number == _number && !ready
+					everyWaveReady = false;
+			}
 	
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
 			/// @DnDHash : 37ED6662
 			/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
 			/// @DnDParent : 2344C262
-			/// @DnDArgument : "expr" "alarm[0] == -1"
-			with(oGame) var l37ED6662_0 = alarm[0] == -1;
+			/// @DnDArgument : "expr" "everyWaveReady && alarm[0] < 0"
+			with(oGame) var l37ED6662_0 = everyWaveReady && alarm[0] < 0;
 			if(l37ED6662_0)
 			{
 				
