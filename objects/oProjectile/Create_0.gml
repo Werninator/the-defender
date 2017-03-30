@@ -16,3 +16,10 @@ speed = 1;
 directionHasBeenSet = false;
 
 
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 343643E3
+/// @DnDArgument : "steps" "1 * room_speed"
+alarm_set(0, 1 * room_speed);
+
+

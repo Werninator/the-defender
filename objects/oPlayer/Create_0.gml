@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 2974CA8C
-/// @DnDInput : 9
+/// @DnDInput : 10
 /// @DnDArgument : "expr" "5"
 /// @DnDArgument : "expr_1" "-1"
 /// @DnDArgument : "expr_2" "-1"
@@ -20,6 +20,7 @@
 /// @DnDArgument : "var_6" "placeTowerY"
 /// @DnDArgument : "var_7" "currentCell"
 /// @DnDArgument : "var_8" "cellBefore"
+/// @DnDArgument : "var_9" "placeType"
 movSpeed = 5;
 gatherX = -1;
 gatherY = -1;
@@ -29,5 +30,6 @@ placeTowerX = -1;
 placeTowerY = -1;
 currentCell = [-1, -1];
 cellBefore = [-1, -1];
+placeType = 0;
 
 

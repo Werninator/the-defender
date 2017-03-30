@@ -91,22 +91,29 @@ if(oPlayer.moveEnabled)
 			/// @DnDSaveInfo : "objectid" "47df638e-484d-4703-9f72-5ba5ef65d4de"
 			var tower = instance_create_layer(placementX, placementY, "Instances", oTest); 
 	
-			/// @DnDAction : YoYo Games.Collisions.If_Any_Object_At
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 6F490C15
+			/// @DnDInput : 6
+			/// @DnDParent : 3B669072
+			/// @DnDArgument : "script" "log"
+			/// @DnDArgument : "arg" ""place_empty: ""
+			/// @DnDArgument : "arg_1" "place_empty(placementX, placementY)"
+			/// @DnDArgument : "arg_2" ""Roomswitch: ""
+			/// @DnDArgument : "arg_3" "other.object_index == oRoomSwitch"
+			/// @DnDArgument : "arg_4" ""projectile: ""
+			/// @DnDArgument : "arg_5" "other.object_index == oProjectile"
+			/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
+			script_execute(log, "place_empty: ", place_empty(placementX, placementY), "Roomswitch: ", other.object_index == oRoomSwitch, "projectile: ", other.object_index == oProjectile);
+	
+			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
-			/// @DnDHash : 1B905B5C
+			/// @DnDHash : 26485458
 			/// @DnDApplyTo : tower
 			/// @DnDParent : 3B669072
-			/// @DnDArgument : "x" "placementX"
-			/// @DnDArgument : "y" "placementY"
-			/// @DnDArgument : "not" "1"
-			with(tower)
-			{
-				var l1B905B5C_0 = placementX;
-				var l1B905B5C_1 = placementY;
-				var l1B905B5C_2 = place_empty(l1B905B5C_0, l1B905B5C_1);
-			}
-			
-			if (l1B905B5C_2)
+			/// @DnDArgument : "expr" "place_empty(placementX, placementY) || place_meeting(placementX, placementY, oRoomSwitch)"
+			with(tower) var l26485458_0 = place_empty(placementX, placementY) || place_meeting(placementX, placementY, oRoomSwitch);
+			if(l26485458_0)
 			{
 				
 			
@@ -115,7 +122,7 @@ if(oPlayer.moveEnabled)
 						/// @DnDHash : 171EACD2
 						/// @DnDInput : 3
 						/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
-						/// @DnDParent : 1B905B5C
+						/// @DnDParent : 26485458
 						/// @DnDArgument : "function" "mp_grid_add_cell"
 						/// @DnDArgument : "arg" "playerGrid"
 						/// @DnDArgument : "arg_1" "placementX / 16"
@@ -128,13 +135,13 @@ if(oPlayer.moveEnabled)
 						/// @DnDVersion : 1
 						/// @DnDHash : 79E54E0E
 						/// @DnDApplyTo : tower
-						/// @DnDParent : 1B905B5C
+						/// @DnDParent : 26485458
 						with(tower) instance_destroy();
 			
 						/// @DnDAction : YoYo Games.Common.Execute_Script
 						/// @DnDVersion : 1.1
 						/// @DnDHash : 2FACE81F
-						/// @DnDParent : 1B905B5C
+						/// @DnDParent : 26485458
 						/// @DnDArgument : "var" "pathCreated"
 						/// @DnDArgument : "var_temp" "1"
 						/// @DnDArgument : "script" "handle_left_click_new"
@@ -144,7 +151,7 @@ if(oPlayer.moveEnabled)
 						/// @DnDAction : YoYo Games.Common.If_Expression
 						/// @DnDVersion : 1
 						/// @DnDHash : 5CA3C6DE
-						/// @DnDParent : 1B905B5C
+						/// @DnDParent : 26485458
 						/// @DnDArgument : "expr" "pathCreated"
 						if(pathCreated)
 						{
@@ -153,16 +160,19 @@ if(oPlayer.moveEnabled)
 										/// @DnDAction : YoYo Games.Common.Variable
 										/// @DnDVersion : 1
 										/// @DnDHash : 236656DC
-										/// @DnDInput : 2
+										/// @DnDInput : 3
 										/// @DnDApplyTo : 0802be38-641c-431d-afca-2c25add97646
 										/// @DnDParent : 5CA3C6DE
 										/// @DnDArgument : "expr" "placementX"
 										/// @DnDArgument : "expr_1" "placementY"
+										/// @DnDArgument : "expr_2" "oGame.selectedTowerType"
 										/// @DnDArgument : "var" "placeTowerX"
 										/// @DnDArgument : "var_1" "placeTowerY"
+										/// @DnDArgument : "var_2" "placeType"
 										with(oPlayer) {
 										placeTowerX = placementX;
 										placeTowerY = placementY;
+										placeType = oGame.selectedTowerType;
 										
 										}
 						
@@ -172,7 +182,7 @@ if(oPlayer.moveEnabled)
 						/// @DnDAction : YoYo Games.Common.Else
 						/// @DnDVersion : 1
 						/// @DnDHash : 0F6336EE
-						/// @DnDParent : 1B905B5C
+						/// @DnDParent : 26485458
 						else
 						{
 							

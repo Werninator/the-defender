@@ -14,7 +14,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 72168D86
 /// @DnDInput : 12
-/// @DnDArgument : "expr_5" "35"
+/// @DnDArgument : "expr_5" "10"
 /// @DnDArgument : "expr_6" ".5 * room_speed"
 /// @DnDArgument : "expr_11" "20"
 /// @DnDArgument : "var" "wood"
@@ -34,7 +34,7 @@ stone = 0;
 gold = 0;
 fabric = 0;
 nextWave = 0;
-waveInterval = 35;
+waveInterval = 10;
 global.constructionTime = .5 * room_speed;
 towerWood = 0;
 towerStone = 0;

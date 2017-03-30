@@ -8,6 +8,7 @@ if alarm[0] == -1 {
 	with other {
 
 		var _cost = cost;
+		var amount = 0;
 
 		switch currentType {
 
@@ -16,9 +17,10 @@ if alarm[0] == -1 {
 
 				if _wood >= cost
 					with oGame {
-						wood -= _cost;
-						towerWood++;
-						box.text = "-" + string(_cost) + " WOOD (" + string(oGame.wood) + ")";
+						amount = wood div _cost;
+						wood -= _cost * amount;
+						towerWood += amount;
+						box.text = "-" + string(amount) + " WOOD (" + string(oGame.wood) + ")";
 						exit;
 					}
 
@@ -29,9 +31,10 @@ if alarm[0] == -1 {
 
 				if _stone >= cost
 					with oGame {
-						stone -= _cost;
-						towerStone++;
-						box.text = "-" + string(_cost) + " STONE (" + string(oGame.stone) + ")";
+						amount = stone div _cost;
+						stone -= _cost * amount;
+						towerStone += amount;
+						box.text = "-" + string(amount) + " STONE (" + string(oGame.stone) + ")";
 						exit;
 					}
 
@@ -42,9 +45,10 @@ if alarm[0] == -1 {
 
 				if _fabric >= cost
 					with oGame {
-						fabric -= _cost;
-						towerFabric++;
-						box.text = "-" + string(_cost) + " MONSTER (" + string(oGame.fabric) + ")";
+						amount = fabric div _cost;
+						fabric -= _cost * amount;
+						towerFabric += amount;
+						box.text = "-" + string(amount) + " MONSTER (" + string(oGame.fabric) + ")";
 						exit;
 					}
 

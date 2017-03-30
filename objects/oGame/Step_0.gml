@@ -411,6 +411,32 @@ if(room != rIntro)
 	
 	}
 
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Released
+	/// @DnDVersion : 1
+	/// @DnDHash : 53601AE7
+	/// @DnDParent : 6CC7063D
+	/// @DnDArgument : "key" "vk_shift"
+	var l53601AE7_0;
+	l53601AE7_0 = keyboard_check_released(vk_shift);
+	if (l53601AE7_0)
+	{
+		
+	
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 54ABA0B0
+			/// @DnDApplyTo : dd9f6de4-d61e-4626-927b-78b7d10e21ad
+			/// @DnDParent : 53601AE7
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "showGrid"
+			with(oGrid) {
+			showGrid = false;
+			
+			}
+	
+	
+	}
+
 
 }
 

@@ -30,6 +30,17 @@ var enemyPath = path;
 
 }
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2E9D0EE9
+/// @DnDApplyTo : enemy
+/// @DnDArgument : "expr" "true"
+/// @DnDArgument : "var" "spawnedInWave"
+with(enemy) {
+spawnedInWave = true;
+
+}
+
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 22595F82

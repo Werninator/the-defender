@@ -1,11 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 28E6AAA5
-/// @DnDApplyTo : 449d8e79-918c-41ba-b5c8-f5a116d413cd
+/// @DnDApplyTo : 0802be38-641c-431d-afca-2c25add97646
 /// @DnDArgument : "var" "selected"
-/// @DnDArgument : "value" "selectedTowerType"
-with(oGame) {
-var selected = selectedTowerType;
+/// @DnDArgument : "value" "placeType"
+with(oPlayer) {
+var selected = placeType;
 
 }
 
