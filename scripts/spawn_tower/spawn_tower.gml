@@ -10,6 +10,16 @@ var placementX = argument0;
 var placementY = argument1;
 
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 25A97D19
+/// @DnDArgument : "soundid" "sndHurt"
+/// @DnDSaveInfo : "soundid" "d903cf91-dd7c-4466-893e-1ab9cae67f34"
+
+{
+	audio_play_sound(sndHurt, 0, 0);
+}
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 0D2760C6

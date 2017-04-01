@@ -91,21 +91,6 @@ if(oPlayer.moveEnabled)
 			/// @DnDSaveInfo : "objectid" "47df638e-484d-4703-9f72-5ba5ef65d4de"
 			var tower = instance_create_layer(placementX, placementY, "Instances", oTest); 
 	
-			/// @DnDAction : YoYo Games.Common.Execute_Script
-			/// @DnDVersion : 1.1
-			/// @DnDHash : 6F490C15
-			/// @DnDInput : 6
-			/// @DnDParent : 3B669072
-			/// @DnDArgument : "script" "log"
-			/// @DnDArgument : "arg" ""place_empty: ""
-			/// @DnDArgument : "arg_1" "place_empty(placementX, placementY)"
-			/// @DnDArgument : "arg_2" ""Roomswitch: ""
-			/// @DnDArgument : "arg_3" "other.object_index == oRoomSwitch"
-			/// @DnDArgument : "arg_4" ""projectile: ""
-			/// @DnDArgument : "arg_5" "other.object_index == oProjectile"
-			/// @DnDSaveInfo : "script" "fe7f48e2-4297-4a25-9287-9acde4e5b7f3"
-			script_execute(log, "place_empty: ", place_empty(placementX, placementY), "Roomswitch: ", other.object_index == oRoomSwitch, "projectile: ", other.object_index == oProjectile);
-	
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
 			/// @DnDHash : 26485458

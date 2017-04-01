@@ -39,6 +39,17 @@ if(distance <= range && alarm[0] == -1)
 	/// @DnDSaveInfo : "objectid" "dca9b152-b060-4f3c-b0fb-16faae6da448"
 	projectile = instance_create_layer(x div 16 * 16 - 6, y div 16 * 16, "Instances_Projectiles", oProjectile); 
 
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 16C1D24B
+	/// @DnDParent : 396A9813
+	/// @DnDArgument : "soundid" "sndTowershoot"
+	/// @DnDSaveInfo : "soundid" "decc2709-568e-4b76-a4b3-07e938df0bd0"
+	
+	{
+		audio_play_sound(sndTowershoot, 0, 0);
+	}
+
 	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4C091D3D

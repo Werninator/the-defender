@@ -1,4 +1,4 @@
-amountWaves = 5;
+amountWaves = 4;
 
 with oGame {
 	towerWood = 0;

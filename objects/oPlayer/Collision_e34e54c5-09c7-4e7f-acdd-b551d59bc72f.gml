@@ -20,7 +20,8 @@ if alarm[0] == -1 {
 						amount = wood div _cost;
 						wood -= _cost * amount;
 						towerWood += amount;
-						box.text = "-" + string(amount) + " WOOD (" + string(oGame.wood) + ")";
+						box.text = "-" + string(_cost * amount) + " WOOD (" + string(oGame.wood) + ")";
+						audio_play_sound(sndCraft, 0, 0);
 						exit;
 					}
 
@@ -34,7 +35,8 @@ if alarm[0] == -1 {
 						amount = stone div _cost;
 						stone -= _cost * amount;
 						towerStone += amount;
-						box.text = "-" + string(amount) + " STONE (" + string(oGame.stone) + ")";
+						box.text = "-" + string(_cost * amount) + " STONE (" + string(oGame.stone) + ")";
+						audio_play_sound(sndCraft, 0, 0);
 						exit;
 					}
 
@@ -48,7 +50,8 @@ if alarm[0] == -1 {
 						amount = fabric div _cost;
 						fabric -= _cost * amount;
 						towerFabric += amount;
-						box.text = "-" + string(amount) + " MONSTER (" + string(oGame.fabric) + ")";
+						box.text = "-" + string(_cost * amount) + " MONSTER (" + string(oGame.fabric) + ")";
+						audio_play_sound(sndCraft, 0, 0);
 						exit;
 					}
 

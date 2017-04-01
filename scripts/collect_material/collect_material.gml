@@ -17,6 +17,16 @@ var tileIndex = argument0;
 /// @DnDSaveInfo : "objectid" "58f05b9e-da5c-48c7-89e7-6cfe045fd851"
 var box = instance_create_layer(oPlayer.x div 16 * 16 + 8, oPlayer.y div 16 * 16 + 8, "Instances", oFloatBox); 
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 2C3F29A4
+/// @DnDArgument : "soundid" "sndGather"
+/// @DnDSaveInfo : "soundid" "88a15194-25bb-445c-bf5f-a2dd35f15fdc"
+
+{
+	audio_play_sound(sndGather, 0, 0);
+}
+
 /// @DnDAction : YoYo Games.Switch.Switch
 /// @DnDVersion : 1
 /// @DnDHash : 7B5C6784
